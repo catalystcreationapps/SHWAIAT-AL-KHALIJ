@@ -27,22 +27,25 @@ export const Footer: React.FC = () => {
   useEffect(() => {
     if (!wordmarkRef.current) return;
 
-    gsap.fromTo(
-      wordmarkRef.current,
-      { opacity: 0.1, y: 50, scale: 0.95 },
-      {
-        opacity: 0.85,
-        y: 0,
-        scale: 1,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: wordmarkRef.current,
-          start: 'top 95%',
-          end: 'bottom 80%',
-          scrub: 1,
-        },
-      }
-    );
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        wordmarkRef.current,
+        { opacity: 0.2, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: wordmarkRef.current,
+            start: 'top 95%',
+            toggleActions: 'play none none none',
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
   }, []);
 
   const currentYear = new Date().getFullYear();
@@ -228,7 +231,7 @@ export const Footer: React.FC = () => {
           ref={wordmarkRef}
           className="pt-12 pb-6 text-center select-none overflow-hidden"
         >
-          <span className="font-heading font-black text-4xl sm:text-7xl md:text-8xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-b from-stone-300 via-stone-300/70 to-stone-200/20 tracking-tighter uppercase pointer-events-none block leading-none">
+          <span className="font-heading font-black text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-transparent bg-clip-text bg-gradient-to-b from-stone-900 via-stone-800 to-stone-700 tracking-tight uppercase pointer-events-none block leading-none">
             {isRTL ? 'شواية الخليج' : 'SHWAIAT AL-KHALIJ'}
           </span>
         </div>
