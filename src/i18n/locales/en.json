@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "home": "Home",
+    "ourBranches": "Our Branches",
+    "menu": "Menu",
+    "ourStory": "Our Story",
+    "ourApplications": "Our Applications",
+    "faq": "FAQ",
+    "orderNow": "Order Now",
+    "switchLanguage": "العربية",
+    "currentLanguage": "EN",
+    "menuToggle": "Toggle navigation menu",
+    "brandTagline": "Authentic Saudi Fire Grill"
+  },
+  "hero": {
+    "badge": "Authentic Fire Grill Heritage",
+    "title": "Authentic Saudi Shawaya & Faham Flavor That Speaks Tradition",
+    "subtitle": "Immerse your senses in the warmth of glowing charcoal, golden rotisserie shawaya, fragrant aromatic rice, and legendary Saudi hospitality across 24+ branches.",
+    "ctaBranches": "Our Branches",
+    "ctaMenu": "See Menu",
+    "stats": {
+      "branches": "24+ Branches",
+      "branchesSub": "Kingdom-wide",
+      "tradition": "Since Decades",
+      "traditionSub": "Authentic Recipes",
+      "quality": "100% Fresh",
+      "qualitySub": "Local Halal Poultry"
+    },
+    "scrollPrompt": "Scroll to explore"
+  },
+  "story": {
+    "tag": "HERITAGE & CRAFT",
+    "title": "OUR STORY",
+    "subtitle": "Experience authentic Saudi flavors at Shwaiat Al-Khalij.",
+    "p1": "Gulf Grill Restaurants is one of the distinguished culinary destinations in the Kingdom of Saudi Arabia. The restaurant is celebrated for its mastery in preparing royal rice, flame-grilled shawaya chicken, and rich stews with a signature, unforgettable depth of flavor.",
+    "p2": "Rooted in timeless Saudi culinary heritage, we select only the finest grains of rice and farm-fresh chicken, infused with our private blend of fragrant spices. Our dedicated management brings decades of expertise to the craft, supported by passionate culinary masters.",
+    "p3": "Every plate we serve reflects our unyielding commitment to supreme quality, hygienic excellence, and the genuine spirit of Arabian generosity.",
+    "counter1": "24+",
+    "counter1Label": "Branches Nationwide",
+    "counter2": "8",
+    "counter2Label": "Major Saudi Cities",
+    "counter3": "100%",
+    "counter3Label": "Fresh Local Chicken",
+    "counter4": "35+",
+    "counter4Label": "Years of Culinary Heritage"
+  },
+  "menu": {
+    "tag": "CULINARY MASTERY",
+    "title": "BROWSE OUR MENU",
+    "subtitle": "Every dish is roasted to perfection over live charcoal and prepared with Saudi spices.",
+    "categories": {
+      "all": "All",
+      "meals": "Meals",
+      "side-dishes": "Side Dishes",
+      "salads": "Salads & Dips",
+      "drinks": "Drinks",
+      "desserts": "Desserts"
+    },
+    "searchPlaceholder": "Search by dish name...",
+    "currency": "SAR",
+    "kcal": "kcal",
+    "viewMore": "View All Dishes",
+    "showLess": "Show Less",
+    "orderOnline": "Order Online",
+    "popular": "Chef's Signature",
+    "emptyMessage": "No items match your search. Explore other categories!"
+  },
+  "delivery": {
+    "tag": "INSTANT DELIVERY",
+    "title": "OUR APPLICATIONS",
+    "subtitle": "Enjoy sizzling Shawaya and Faham delivered hot and fresh directly to your doorstep via Saudi Arabia's premier delivery partners.",
+    "hoverNote": "Hover to pause • Click to order on your favorite app"
+  },
+  "appDownload": {
+    "tag": "OFFICIAL MOBILE APP",
+    "title": "Get the Shwaiat Al-Khalij App",
+    "subtitle": "App is available for all devices",
+    "p1": "Download the official Shwaiat Al-Khalij app for rapid ordering, exclusive discounts, instant tracking, and convenient curb-side or counter pickup.",
+    "qrTitle": "Scan QR Code",
+    "qrSubtitle": "Instant direct download link on iOS & Android",
+    "appStoreAlt": "Download on Apple App Store",
+    "googlePlayAlt": "Get it on Google Play",
+    "feature1": "Fast & Secure Checkout",
+    "feature2": "Exclusive App-Only Offers",
+    "feature3": "Live Order Tracking"
+  },
+  "branches": {
+    "tag": "LOCATIONS",
+    "title": "OUR LOCATIONS",
+    "subtitle": "Serving You Throughout Saudi Arabia",
+    "heroSubtitle": "Find your nearest Shwaiat Al-Khalij branch across Riyadh, Jeddah, Dammam, Khobar, Al-Ahsa, and beyond.",
+    "allCities": "All Cities",
+    "searchPlaceholder": "Search branch name, street, or district...",
+    "hours": "Working Hours",
+    "getDirections": "View on Google Maps",
+    "call": "Call Branch",
+    "branchCount": "branches found",
+    "viewModeGrid": "Grid View",
+    "viewModeMap": "Map View",
+    "unifiedPhone": "Unified Number: 920034443"
+  },
+  "branchesTeaser": {
+    "tag": "KINGDOM-WIDE PRESENCE",
+    "title": "Find Your Nearest Shwaiat Al-Khalij",
+    "subtitle": "Discover our authentic fire grills across 24+ branches in 8 Saudi cities, from Riyadh to Jeddah and Dammam.",
+    "cta": "Explore All 24 Locations",
+    "citiesCount": "24 Branches in 8 Saudi Cities"
+  },
+  "faq": {
+    "tag": "QUESTIONS & ANSWERS",
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "subtitle": "Everything you need to know about our chicken, rice, ordering, and branch locations."
+  },
+  "footer": {
+    "wordmark": "SHWAIAT AL-KHALIJ",
+    "tagline": "The Authentic Heart of Saudi Fire-Grill Dining",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us",
+    "downloadApp": "Download Our App",
+    "emailLabel": "Email:",
+    "phoneLabel": "Unified Hotline:",
+    "hoursLabel": "Customer Service:",
+    "hoursValue": "11:00 AM - 6:00 PM (Branches open until midnight)",
+    "rights": "All rights reserved © 2026 Shwaiat Al-Khalij.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading delicious flavors...",
+    "orderNow": "Order Now",
+    "viewOnMap": "View on Map",
+    "close": "Close",
+    "back": "Back",
+    "saudiArabia": "Kingdom of Saudi Arabia"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Shwaiat Al-Khalij | شواية الخليج",
+  "short_name": "Shwaiat Al-Khalij",
+  "description": "Authentic Saudi Shawaya & Charcoal Faham Fire Grill Dining",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0a09",
+  "theme_color": "#0c0a09",
+  "icons": [
+    {
+      "src": "https://shwaiatalkhalij.com/public/assets/img/logo_1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://shwaiatalkhalij.com/public/assets/img/logo_1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

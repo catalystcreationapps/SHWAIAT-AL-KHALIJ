@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sand: #faf8f5;
+  --color-sand-warm: #f5efe6;
+  --color-cream: #fdfbf7;
+  --color-white: #ffffff;
+  --color-charcoal: #1c1917;
+  --color-espresso: #292524;
+  --color-ember: #ea580c;
+  --color-ember-glow: rgba(234, 88, 12, 0.25);
+  --color-saffron: #f59e0b;
+  --color-gold: #d97706;
+}
+
+/* Smooth Scrolling Base - Bright Luxury Palette */
+html {
+  background-color: #faf8f5;
+  color: #1c1917;
+  color-scheme: light;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  background-color: #faf8f5;
+  color: #1c1917;
+}
+
+/* Arabic typography overrides when dir="rtl" */
+html[dir="rtl"] body {
+  font-family: 'Cairo', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] .font-heading {
+  font-family: 'Amiri', 'Cairo', serif;
+}
+
+/* Subtle Film Grain Overlay */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Subtle Najdi Geometric Motif Background for Light Theme */
+.najdi-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' fill-opacity='0.045' fill-rule='evenodd'%3E%3Cpath d='M30 30L15 15l15-15 15 15-15 15zm0 0l15 15-15 15-15-15 15-15zM0 30l15-15L0 0l-15 15 15 15zm60 0l15-15L60 0l-15 15 15 15z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Warm Golden Hairline Dividers */
+.gold-hairline {
+  border-color: rgba(217, 119, 6, 0.18);
+}
+
+.gold-hairline-t {
+  border-top: 1px solid rgba(217, 119, 6, 0.18);
+}
+
+.gold-hairline-b {
+  border-bottom: 1px solid rgba(217, 119, 6, 0.18);
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf8f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e7dfd5;
+  border-radius: 4px;
+  border: 1px solid rgba(217, 119, 6, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Custom Cursor Elements for Light Mode */
+.custom-cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #ea580c;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  z-index: 10000;
+  box-shadow: 0 0 8px rgba(234, 88, 12, 0.5);
+}
+
+.custom-cursor-ring {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(217, 119, 6, 0.6);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #1c1917;
+  letter-spacing: 0.08em;
+}
+
+.custom-cursor-ring.hover-active {
+  width: 58px;
+  height: 58px;
+  border-color: #ea580c;
+  background-color: rgba(234, 88, 12, 0.08);
+  backdrop-filter: blur(2px);
+}
+
+.custom-cursor-ring.hover-view {
+  width: 70px;
+  height: 70px;
+  border-color: #ea580c;
+  background-color: #ea580c;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+/* Hide custom cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
