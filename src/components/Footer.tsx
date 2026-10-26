@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
         wordmarkRef.current,
         { opacity: 0.2, y: 30 },
         {
-          opacity: 1,
+          opacity: 0.85,
           y: 0,
           duration: 0.9,
           ease: 'power3.out',
@@ -229,9 +229,12 @@ export const Footer: React.FC = () => {
         {/* Oversized Cinematic Brand Wordmark */}
         <div
           ref={wordmarkRef}
-          className="pt-12 pb-6 text-center select-none overflow-hidden"
+          className="pt-12 pb-6 text-center select-none overflow-hidden w-full flex justify-center items-center"
         >
-          <span className="font-heading font-black text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-transparent bg-clip-text bg-gradient-to-b from-stone-900 via-stone-800 to-stone-700 tracking-tight uppercase pointer-events-none block leading-none">
+          <span
+            className="font-heading font-black text-transparent bg-clip-text bg-gradient-to-b from-stone-300 via-stone-300/70 to-stone-200/20 tracking-tighter uppercase pointer-events-none block leading-none whitespace-nowrap"
+            style={{ fontSize: 'clamp(1.15rem, 7vw, 7.5rem)' }}
+          >
             {isRTL ? 'شواية الخليج' : 'SHWAIAT AL-KHALIJ'}
           </span>
         </div>
